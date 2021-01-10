@@ -1,0 +1,12 @@
+name: 'VSIX Version'
+description: 'GithubAction for setting Version of Visual Studio Extensions'
+inputs:
+  version:
+    description: 'New extension version'
+    required: true
+  vsix-manifest-file:
+    description: 'The path to vsix manifest file'
+    required: true
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
