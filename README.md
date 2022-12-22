@@ -13,3 +13,15 @@ Example usage:
 ```
 
 [VSIX extension schema 2.0 reference](https://docs.microsoft.com/en-us/visualstudio/extensibility/vsix-extension-schema-2-0-reference?view=vs-2019)
+
+
+## How to build github action
+
+```
+docker run -v ${pwd}:/action/src -it  node:16-alpine /bin/sh
+cd action/src
+docker run -v ./:/action/src -it  node:16-alpine /bin/sh
+npm i -g @vercel/ncc
+npm install
+ncc build ./src/main.ts
+```
