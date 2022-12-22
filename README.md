@@ -6,7 +6,7 @@ Example usage:
 
 ```yml
 - name: Set version for Visual Studio Extension
-  uses: cezarypiatek/VsixVersionAction@1.0
+  uses: cezarypiatek/VsixVersionAction@1.1
   with:
     version: 1.2.3  
     vsix-manifest-file: src\SampleProject.VSIX\source.extension.vsixmanifest
