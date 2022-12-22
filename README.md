@@ -18,9 +18,8 @@ Example usage:
 ## How to build github action
 
 ```
-docker run -v ${pwd}:/action/src -it  node:16-alpine /bin/sh
-cd action/src
-docker run -v ./:/action/src -it  node:16-alpine /bin/sh
+docker run -v ${pwd}:/action -it  node:16-alpine /bin/sh
+cd action
 npm i -g @vercel/ncc
 npm install
 ncc build ./src/main.ts
