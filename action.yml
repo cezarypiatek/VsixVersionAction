@@ -8,5 +8,5 @@ inputs:
     description: 'The path to vsix manifest file'
     required: true
 runs:
-  using: 'node16'
+  using: 'node20'
   main: 'dist/index.js'
